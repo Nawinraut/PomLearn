@@ -46,4 +46,9 @@ public class JoinNow extends TestBase{
 		return title;
 	}
 	
+	public void gitTest()
+	{
+	 System.out.println("Hello");
+	}
+	
 }
