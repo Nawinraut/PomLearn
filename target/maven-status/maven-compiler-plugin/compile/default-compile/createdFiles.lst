@@ -1,0 +1,5 @@
+com\hilton\UIpages\HomePage.class
+com\hilton\TestBase\TestBase.class
+com\hilton\utils\TestUtil.class
+com\hilton\UIpages\SignIn.class
+com\hilton\UIpages\LoginPage.class
