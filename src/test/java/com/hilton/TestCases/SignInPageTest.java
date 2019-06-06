@@ -2,11 +2,12 @@ package com.hilton.TestCases;
 
 import java.io.IOException;
 
+import org.apache.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import org.testng.log4testng.Logger;
+
 import com.hilton.TestBase.TestBase;
 import com.hilton.UIpages.LoginPage;
 import com.hilton.UIpages.SignIn;
@@ -14,7 +15,8 @@ import com.hilton.UIpages.SignIn;
 
 public class SignInPageTest extends TestBase {
 
-	public static final Logger log=Logger.getLogger(SignInPageTest.class.getClass());
+	public static final Logger log=Logger.getLogger(SignInPageTest.class.getName());
+	
 	SignIn signinpage;
 	LoginPage loginPage;
 	
@@ -38,7 +40,7 @@ public class SignInPageTest extends TestBase {
 		log.info("Sign in Page title is verified");
 	}
 	
-	/*@Test(priority=2)
+	@Test(priority=2)
 	public void verifyLogoTest()
 	{
 		boolean logo = signinpage.validateLogo();
@@ -51,7 +53,7 @@ public class SignInPageTest extends TestBase {
 	{
 		loginPage = signinpage.verifySignInButton();
 		log.info("Login Page displayed");
-	}*/
+	}
 	
 	@AfterMethod
 	public void closeBrowser()

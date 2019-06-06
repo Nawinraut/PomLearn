@@ -1,0 +1,28 @@
+2019-06-06 14:49:52 INFO  Class:40 - Sign in Page title is verified
+2019-06-06 14:49:53 INFO  Class:62 - Browser is closed
+2019-06-06 14:53:28 INFO  Class:40 - Sign in Page title is verified
+2019-06-06 14:53:29 INFO  Class:62 - Browser is closed
+2019-06-06 14:57:03 INFO  Class:40 - Sign in Page title is verified
+2019-06-06 14:57:04 INFO  Class:62 - Browser is closed
+2019-06-06 14:57:23 INFO  Class:48 - Sign in Page logo is verified
+2019-06-06 14:57:24 INFO  Class:62 - Browser is closed
+2019-06-06 14:58:04 INFO  Class:55 - Login Page displayed
+2019-06-06 14:58:05 INFO  Class:62 - Browser is closed
+2019-06-06 15:01:21 INFO  TestBase:48 - Launching Chrome Browser
+2019-06-06 15:01:38 INFO  SignInPageTest:40 - Sign in Page title is verified
+2019-06-06 15:01:40 INFO  SignInPageTest:62 - Browser is closed
+2019-06-06 15:01:42 INFO  TestBase:48 - Launching Chrome Browser
+2019-06-06 15:02:00 INFO  SignInPageTest:48 - Sign in Page logo is verified
+2019-06-06 15:02:01 INFO  SignInPageTest:62 - Browser is closed
+2019-06-06 15:02:04 INFO  TestBase:48 - Launching Chrome Browser
+2019-06-06 15:02:45 INFO  SignInPageTest:55 - Login Page displayed
+2019-06-06 15:02:46 INFO  SignInPageTest:62 - Browser is closed
+2019-06-06 15:09:45 INFO  TestBase:48 - Launching Chrome Browser
+2019-06-06 15:10:07 INFO  SignInPageTest:40 - Sign in Page title is verified
+2019-06-06 15:10:08 INFO  SignInPageTest:62 - Browser is closed
+2019-06-06 15:10:12 INFO  TestBase:48 - Launching Chrome Browser
+2019-06-06 15:10:32 INFO  SignInPageTest:48 - Sign in Page logo is verified
+2019-06-06 15:10:33 INFO  SignInPageTest:62 - Browser is closed
+2019-06-06 15:10:36 INFO  TestBase:48 - Launching Chrome Browser
+2019-06-06 15:11:12 INFO  SignInPageTest:55 - Login Page displayed
+2019-06-06 15:11:13 INFO  SignInPageTest:62 - Browser is closed
