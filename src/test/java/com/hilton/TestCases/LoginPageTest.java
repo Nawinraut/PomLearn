@@ -38,12 +38,12 @@ public class LoginPageTest extends TestBase {
 		Assert.assertEquals(LoginPageTitle,"Sign In - Hilton Honors");
 	}
 
-	@Test(priority=2)
+	/*@Test(priority=2)
 	public void loginSuccess()
 	{
 		homepage = loginPage.login(prop.getProperty("username"), prop.getProperty("Password"));
 	}
-	
+	*/
 
 	@AfterMethod
 	public void closeBrowser()

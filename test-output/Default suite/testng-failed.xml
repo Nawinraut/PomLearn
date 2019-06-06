@@ -6,8 +6,6 @@
       <class name="com.hilton.TestCases.SignInPageTest">
         <methods>
           <include name="verifySignInPageTitle"/>
-          <include name="verifyLogoTest"/>
-          <include name="clickSignInButtonTest"/>
           <include name="setup"/>
         </methods>
       </class> <!-- com.hilton.TestCases.SignInPageTest -->

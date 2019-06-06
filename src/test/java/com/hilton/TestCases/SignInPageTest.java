@@ -2,11 +2,13 @@ package com.hilton.TestCases;
 
 import java.io.IOException;
 
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
+
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import org.testng.log4testng.Logger;
 import com.hilton.TestBase.TestBase;
 import com.hilton.UIpages.LoginPage;
 import com.hilton.UIpages.SignIn;
@@ -14,7 +16,8 @@ import com.hilton.UIpages.SignIn;
 
 public class SignInPageTest extends TestBase {
 
-	public static final Logger log=Logger.getLogger(SignInPageTest.class.getClass());
+	public static Logger log=LogManager.getLogger(SignInPageTest.class.getName());
+	
 	SignIn signinpage;
 	LoginPage loginPage;
 	
