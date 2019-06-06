@@ -38,7 +38,7 @@ public class SignInPageTest extends TestBase {
 		log.info("Sign in Page title is verified");
 	}
 	
-	@Test(priority=2)
+	/*@Test(priority=2)
 	public void verifyLogoTest()
 	{
 		boolean logo = signinpage.validateLogo();
@@ -51,7 +51,7 @@ public class SignInPageTest extends TestBase {
 	{
 		loginPage = signinpage.verifySignInButton();
 		log.info("Login Page displayed");
-	}
+	}*/
 	
 	@AfterMethod
 	public void closeBrowser()
