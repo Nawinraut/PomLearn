@@ -1,49 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="91945" started-at="2019-06-06T09:39:41Z" finished-at="2019-06-06T09:41:13Z">
+  <suite name="Default suite" duration-ms="56893" started-at="2019-06-11T17:22:01Z" finished-at="2019-06-11T17:22:58Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="91945" started-at="2019-06-06T09:39:41Z" finished-at="2019-06-06T09:41:13Z">
-      <class name="com.hilton.TestCases.SignInPageTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.hilton.TestCases.SignInPageTest@6b143ee9]" name="setup" is-config="true" duration-ms="25893" started-at="2019-06-06T15:09:41Z" finished-at="2019-06-06T15:10:07Z">
+    <test name="Default test" duration-ms="56893" started-at="2019-06-11T17:22:01Z" finished-at="2019-06-11T17:22:58Z">
+      <class name="com.hilton.TestCases.LoginPageTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.hilton.TestCases.LoginPageTest@9f70c54]" name="setup" is-config="true" duration-ms="54930" started-at="2019-06-11T22:52:01Z" finished-at="2019-06-11T22:52:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="verifySignInPageTitle()[pri:0, instance:com.hilton.TestCases.SignInPageTest@6b143ee9]" name="verifySignInPageTitle" duration-ms="26" started-at="2019-06-06T15:10:07Z" finished-at="2019-06-06T15:10:07Z">
+        <test-method status="PASS" signature="loginSuccess()[pri:0, instance:com.hilton.TestCases.LoginPageTest@9f70c54]" name="loginSuccess" duration-ms="1938" started-at="2019-06-11T22:52:56Z" finished-at="2019-06-11T22:52:58Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifySignInPageTitle -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.hilton.TestCases.SignInPageTest@6b143ee9]" name="closeBrowser" is-config="true" duration-ms="1225" started-at="2019-06-06T15:10:07Z" finished-at="2019-06-06T15:10:08Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.hilton.TestCases.SignInPageTest@6b143ee9]" name="setup" is-config="true" duration-ms="23290" started-at="2019-06-06T15:10:08Z" finished-at="2019-06-06T15:10:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="verifyLogoTest()[pri:0, instance:com.hilton.TestCases.SignInPageTest@6b143ee9]" name="verifyLogoTest" duration-ms="70" started-at="2019-06-06T15:10:32Z" finished-at="2019-06-06T15:10:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLogoTest -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.hilton.TestCases.SignInPageTest@6b143ee9]" name="closeBrowser" is-config="true" duration-ms="917" started-at="2019-06-06T15:10:32Z" finished-at="2019-06-06T15:10:33Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.hilton.TestCases.SignInPageTest@6b143ee9]" name="setup" is-config="true" duration-ms="18870" started-at="2019-06-06T15:10:33Z" finished-at="2019-06-06T15:10:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="clickSignInButtonTest()[pri:0, instance:com.hilton.TestCases.SignInPageTest@6b143ee9]" name="clickSignInButtonTest" duration-ms="20698" started-at="2019-06-06T15:10:52Z" finished-at="2019-06-06T15:11:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickSignInButtonTest -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.hilton.TestCases.SignInPageTest@6b143ee9]" name="closeBrowser" is-config="true" duration-ms="924" started-at="2019-06-06T15:11:12Z" finished-at="2019-06-06T15:11:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- com.hilton.TestCases.SignInPageTest -->
+        </test-method> <!-- loginSuccess -->
+      </class> <!-- com.hilton.TestCases.LoginPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

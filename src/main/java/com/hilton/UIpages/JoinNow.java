@@ -3,8 +3,8 @@ package com.hilton.UIpages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
 import com.hilton.TestBase.TestBase;
+import com.hilton.utils.TestUtil;
 
 public class JoinNow extends TestBase{
 
@@ -32,9 +32,23 @@ public class JoinNow extends TestBase{
 	@FindBy(id="passwordConfirmJoin")
 	WebElement confirmPswd;
 	
-	@FindBy(xpath="//span[contains(text(),'Join For Free')]")
+	@FindBy (xpath="//iframe[contains(@name,'a-')]")
+	WebElement frame;
+	
+	@FindBy (id="recaptcha-anchor")
+	WebElement capchachkbox;
+	
+	@FindBy (xpath="//iframe[contains(@name,'c-')]")
+	WebElement verifyFrame;
+	
+	@FindBy (id="recaptcha-verify-button")
+	WebElement verifycapcha;
+	
+	@FindBy(xpath="//*[@id='enrollForm']/p[2]/button/span")
 	WebElement submit;
 	
+	
+	TestUtil testUtil=new TestUtil();
 	public JoinNow()
 	{
 		PageFactory.initElements(driver, this);
@@ -46,9 +60,26 @@ public class JoinNow extends TestBase{
 		return title;
 	}
 	
-	public void gitTest()
+	
+	public void joinHiltonHonor(String FirstName,String LastName,String Phone,String Email,String Address,String City,String region,
+			String PostalCode,String Password,String ConirmPswd)
 	{
-	 System.out.println("Hello");
+
+		firstName.sendKeys(FirstName);
+		lastName.sendKeys(LastName);
+		phone.sendKeys(Phone);
+		email.sendKeys(Email);
+		address1.sendKeys(Address);
+		zip.sendKeys(PostalCode);
+		password.sendKeys(Password);
+		confirmPswd.sendKeys(ConirmPswd);
+		testUtil.switchFrame(frame);
+		capchachkbox.click();
+		driver.switchTo().defaultContent();
+		testUtil.switchFrame(verifyFrame);
+		verifycapcha.click();
+		testUtil.scrollToViewElement(submit);
+		submit.click();
 	}
 	
 }

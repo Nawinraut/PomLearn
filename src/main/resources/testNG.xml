@@ -1,0 +1,8 @@
+<suite name="Hilton Application automation Test" verbose="1">
+  <test name="Hilton">
+   <classes>
+      <class name="com.hilton.TestCases.SignInPageTest" />
+      <class name="com.hilton.TestCases.LoginPageTest" />
+    </classes>
+  </test>
+</suite>

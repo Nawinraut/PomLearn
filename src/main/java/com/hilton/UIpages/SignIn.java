@@ -16,6 +16,8 @@ public class SignIn extends TestBase {
 	@FindBy(id="hhonors_dock_logo")
 	WebElement logo;
 	
+	@FindBy (id="explore_benefits")
+	WebElement join;
 	
 	public static final Logger log=Logger.getLogger(SignIn.class.getClass());
 	TestUtil util;
@@ -59,5 +61,9 @@ public class SignIn extends TestBase {
 		return new LoginPage();
 	}
 	
-	  
+	public JoinNow verifyJoinLink()
+	{
+		join.click();
+		return new JoinNow();
+	}
 }

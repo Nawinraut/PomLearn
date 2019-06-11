@@ -1,5 +1,7 @@
 package com.hilton.TestCases;
 
+import java.io.IOException;
+
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -9,6 +11,7 @@ import com.hilton.TestBase.TestBase;
 import com.hilton.UIpages.HomePage;
 import com.hilton.UIpages.LoginPage;
 import com.hilton.UIpages.SignIn;
+
 
 public class LoginPageTest extends TestBase {
 
@@ -23,7 +26,7 @@ public class LoginPageTest extends TestBase {
 	}
 
 	@BeforeMethod
-	public void setup() 
+	public void setup() throws IOException 
 	{
 		init();
 		signIn=new SignIn();
@@ -31,12 +34,12 @@ public class LoginPageTest extends TestBase {
 		
 	}
 
-	@Test(priority=1)
+	/*@Test(priority=1)
 	public void verifyLoginPageTitle()
 	{
 		String LoginPageTitle = loginPage.validateLoginPageTitle();
 		Assert.assertEquals(LoginPageTitle,"Sign In - Hilton Honors");
-	}
+	}*/
 
 	@Test(priority=2)
 	public void loginSuccess()
@@ -45,10 +48,10 @@ public class LoginPageTest extends TestBase {
 	}
 	
 
-	@AfterMethod
+	/*@AfterMethod
 	public void closeBrowser()
 	{
 		
 		driver.quit();
-	}
+	}*/
 }

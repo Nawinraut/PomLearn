@@ -32,9 +32,10 @@ public class TestBase {
 		}
 	}
 
-	public static void init()
+	public static void init() throws IOException
 	{
-			String browsername=prop.getProperty("Browser");
+		try{	
+		String browsername=prop.getProperty("Browser");
 			if(browsername.equalsIgnoreCase("Firefox"))
 			{
 				System.setProperty("webdriver.gecko.driver","C:\\Users\\nawkumar\\git\\PomLearn\\Driver\\geckodriver.exe");
@@ -47,6 +48,10 @@ public class TestBase {
 				driver=new ChromeDriver();
 				log.info("Launching Chrome Browser");
 			}
+		}catch(Exception e)
+		{
+			log.info("Can't launch browser");
+		}
 			
 			driver.manage().window().maximize();
 			driver.manage().timeouts().pageLoadTimeout(TestUtil.Page_Load_Timeout, TimeUnit.SECONDS);

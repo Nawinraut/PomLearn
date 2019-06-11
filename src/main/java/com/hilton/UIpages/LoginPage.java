@@ -1,11 +1,11 @@
 package com.hilton.UIpages;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.hilton.TestBase.TestBase;
+import com.hilton.utils.TestUtil;
 
 public class LoginPage extends TestBase {
 	
@@ -42,6 +42,7 @@ public class LoginPage extends TestBase {
 	@FindBy (id="recaptcha-verify-button")
 	WebElement verifyButton;
 	
+	TestUtil testUtil=new TestUtil();
 	public LoginPage()
 	{
 		PageFactory.initElements(driver, this);
@@ -58,7 +59,8 @@ public class LoginPage extends TestBase {
 		userTxtBox.sendKeys(username);
 		password.click();
 		pwdTxtBox.sendKeys(passwd);
-		driver.switchTo().frame(frame);
+		System.out.println("login page driver"+ driver);
+		testUtil.switchFrame(frame);
 		captcha.click();
 		driver.switchTo().defaultContent();
         driver.switchTo().frame(verifyFrame);
